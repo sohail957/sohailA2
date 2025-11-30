@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - 100SMILES Dental Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="images/images/Dental-Logo-Design.jpg" alt="100SMILES Dental Care Logo" class="header-logo">
+      <div class="header-text-content">
+        <h1>100SMILES Dental Care</h1>
+        <p>We’re here to help you smile brighter.</p>
+      </div>
+    </div>
+    
+    <nav class="nav-right-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="book-btn">Book Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Clinic Information</h2>
+      <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
+      <p><strong>Phone:</strong> 07 5000 5599</p>
+      <p><strong>Fax:</strong> 07 4567 9999</p>
+      <p><strong>Email:</strong> admin@100smilesdentalcare.com.au</p>
+    </section>
+
+    <section>
+      <h2>Trading Hours</h2>
+      <ul>
+        <li>Monday–Friday: 8:30am–6:30pm</li>
+        <li>Saturday–Sunday: 8:30am–1:00pm</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Announcements</h2>
+      <ul>
+        <li>🎉 25% discount on your next dental visit when you book through our online booking form!</li>
+        <li>🦷 Free dental checkup on Saturday 5th July, starting at 9 am</li>
+        <li>💡 10% discount on Annual Dental Check-Up until April 30</li>
+      </ul>
+      <img src="images/images/Advert.png" alt="Free dental checkup promotion" class="promo-img">
+    </section>
+
+    <section>
+      <h2>Book an Appointment</h2>
+      <form id="booking-form" novalidate>
+        <label for="fullName">Full Name*</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone*</label>
+        <input type="tel" id="phone" name="phone" required pattern="^(\+?61|0)[0-9]{9}$">
+
+        <label for="service">Service*</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="checkup">Check-up & Clean</option>
+          <option value="whitening">Teeth Whitening</option>
+          <option value="implants">Dental Implants</option>
+          <option value="emergency">Emergency Appointment</option>
+        </select>
+
+        <label for="date">Preferred Date*</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time">
+
+        <p class="form-question">Are you a new patient?*</p>
+        <div class="radio-group">
+          <label for="isNewYes">
+            <input type="radio" id="isNewYes" name="isNew" value="yes" required> Yes
+          </label>
+          <label for="isNewNo">
+            <input type="radio" id="isNewNo" name="isNew" value="no"> No
+          </label>
+        </div>
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <div class="checkbox-group">
+          <label for="consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            I agree to be contacted to confirm my booking.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">Submit Booking</button>
+        <button type="reset">Clear</button>
+        <p id="form-success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>📍 33 Fantail Street, Razole, Queensland</p>
+    <p>📞 07 5000 5599 | 📠 07 4567 9999</p>
+    <p>📧 admin@100smilesdentalcare.com.au</p>
+  </footer>
+
+  <script src="form-validation.js"></script>
+</body>
+</html>
